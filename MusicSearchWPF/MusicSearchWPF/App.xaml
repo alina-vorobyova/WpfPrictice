@@ -1,0 +1,16 @@
+﻿<Application x:Class="MusicSearchWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MusicSearchWPF"
+             xmlns:viewModels="clr-namespace:MusicSearchWPF.ViewModels"
+             xmlns:views="clr-namespace:MusicSearchWPF.Views"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewModels:HomeViewModel}">
+            <views:HomeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:DetailViewModel}">
+            <views:DetailView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
